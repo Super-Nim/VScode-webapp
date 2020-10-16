@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Test App</title>
+		<script type="text/javascript" src = "{{ url_for('static', filename = 'js/main.js')}}"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styleflask.css') }}">
+	</head>
+
+<body>
+
+<h1>Rendering the HTML successfully lmaooooooo</h1>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for ="fname">First Name</label>
+		<input type="text" id="fname" name="first" placeholder="First name"><br>
+		<label for ="lname">Last name</label>
+		<input type="text" id="lname" name="last" placeholder="Last name"><br>
+		<label for="filefield">Picture</label>
+		<input type="file" id="filefield" name="filename">
+		<input type="submit" value="click me">
+	</form>
+	
+	<button onclick="myFunction()">click</button>
+	<div class="blue">
+	<p id="demo">This still needs to change when clicked</p>
+</div>
+
+</body>
+
+</html>
